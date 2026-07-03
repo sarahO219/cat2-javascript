@@ -45,3 +45,33 @@ addWishButton.addEventListener("click", function() {
         wishInput.value = "";
     }
 });
+const contactForm = document.getElementById("contact-form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+const formFeedback = document.getElementById("form-feedback");
+
+contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name === "" || email === "" || message === "") {
+        formFeedback.textContent = "Please fill in all fields.";
+        formFeedback.style.color = "red";
+        return;
+    }
+
+    if (!emailPattern.test(email)) {
+        formFeedback.textContent = "Please enter a valid email address.";
+        formFeedback.style.color = "red";
+        return;
+    }
+
+    formFeedback.textContent = "Message sent successfully!";
+    formFeedback.style.color = "green";
+    contactForm.reset();
+});
