@@ -1,0 +1,5 @@
+Services – Services are stored as an array of objects (name + description). A forEach() loop reads the array and builds an <li> for each one, adding them to the page with appendChild() instead of typing them out in HTML.
+Wishlist – Typing an item and clicking "Add" creates a new <li> with its own "Remove" button. Each remove button only deletes its own item, using remove().
+Contact form – Submitting the form is intercepted with preventDefault() so the page doesn't reload. JS checks the fields aren't empty and the email looks valid, then shows a success or error message on the page.
+Dark mode – Clicking the toggle adds/removes a "dark-theme" class on <body>, which flips the site's colors. The choice is saved in localStorage, so refreshing the page keeps the same theme.
+Banner reveal – Clicking the banner image toggles a "revealed" class using classList.toggle(), which shows/hides a caption via CSS.
