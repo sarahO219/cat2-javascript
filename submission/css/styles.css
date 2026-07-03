@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+{--transition-smooth: all 0.3s ease;
+    
+
+}
+:root{
+    --transition-smooth: all 0.3s ease;
+    --primary-color:#1a365d;
+    --accent-color:#d69e2e;
+    --text-dark:#2d3748;
+    --text-light:#f7fafc;
+    --background-color:#f8f9fa;
+    --font-heading: 'Playfair', Georgia,serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+body{
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+
+    background-color: var(--background-color);
+    color: var(--text-dark);
+    margin:0;
+    line-height: 1.5;
+
+    
+}
+h1,h2,h3{
+    font-family: var(--font-heading);
+    
+}
+header{
+    padding-top:25px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+    background-color: var(--primary-color);
+
+    
+
+}
+header h1{
+    color: var(--text-light);
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+header h1 span{
+    color: var(--accent-color);
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    margin-left: 10px;
+}
+.navbar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.navbar a{
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+.section{
+    padding:40px 20px;
+    text-align: center;
+    justify-content:center;
+    display:flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transform:translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-image{
+    display:block;
+    width:100%;
+    max-width:500px;
+    margin:25px auto 0;
+    border-radius:10px;
+}
+.hero-image:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+main{
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 15px;
+
+}
+.mission-section,
+.services-section,
+.contact-section{
+    display:block;
+    background-color:white;
+    padding:40px;
+    margin:30px 0;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-left 0.4s ease;
+
+    border-left:6px solid transparent;
+}
+.mission-section:hover{
+    transform:translateY(-10px);
+    border-left-color:#2b6cb0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.services-section:hover{
+    transform:translateY(-10px);
+    border-left-color:#38a169;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-section:hover{
+    transform:translateY(-10px);
+    border-left-color:var(--accent-color);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    
+
+}
+h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.mission-section:hover h3,
+.services-section:hover h3,
+.contact-section:hover h3{
+    color: var(--accent-color);
+}
+.accent-line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.services-list li{
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services-list li:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+.contact{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.contact li{
+    display: block;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+.contact li strong{
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+.main footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+.main footer p{
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+    header h1{
+        font-size: 1.8rem;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+     .navbar a{
+    text-decoration: none;
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    margin-left: 1.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+     }
+        .navbar a:hover{
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        .home-section{
+            background-image: url('../images/resort.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+
+    }
+    .hero-content h2{
+        font-size: 2.2rem;
+    }
+    .services-list{
+    
+        display: block;
+        grid-template-columns: 1fr;
+    }
+    .section{
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    
+
+@media screen and(min-width:601px) and (max-width: 960px){
+    header h1{font-size: 2rem;}
+    .hero-content h2{font-size: 2.5rem;}
+     
+     }
+        
+    
+    
