@@ -90,3 +90,7 @@ themeToggleButton.addEventListener("click", function() {
         themeToggleButton.textContent = "Dark Mode";
     }               
 });
+const bannerWrapper = document.getElementById("banner-wrapper");
+bannerWrapper.addEventListener("click", function() {
+    bannerWrapper.classList.toggle("expanded");
+});
