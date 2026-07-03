@@ -288,6 +288,45 @@ h3{
     .hero-content h2{font-size: 2.5rem;}
      
      }
+     .wishlist-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .wishlist-form label{
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    .wishlist-form input{
+        padding: 10px;
+        border: 1px solid var(--primary-color);
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    .wishlist-list li {
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        background-color: var(--background-color);
+        padding: 12px 15px;
+        border-radius: 8px;
+        margin-bottom:10px;
+    }
+    .remove-btn{
+        background-color: #c53030;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.remove-btn:hover {
+    background-color: #9b2c2c;
+}
+    
+
         
     
     
